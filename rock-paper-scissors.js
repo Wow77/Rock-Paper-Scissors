@@ -2,12 +2,25 @@
 console.log("Welcome to Rock, Paper and Scissor game.\nSelect your option: \n1.Rock  2.Paper  3.Scissor");
 
 //Computer playing function
+/*
 function getComputerChoice(){
     const choiceNumber = Math.floor(Math.random()*3);
     const computerOptions = ['Rock','Paper','Scissor'];
     const computerChoice = computerOptions[choiceNumber];
     return computerChoice; 
 }
+*/
+
+function getComputerChoice() {
+    let choiceNumber = Math.random()*3;
+    if (choiceNumber <= 0.3333) {
+      return "Paper";
+    } else if (choiceNumber >= 0.6666) {
+      return "Rock";
+    } else {
+      return "Scissor";
+    }
+  }
 
 const computerSelection = getComputerChoice();
 
