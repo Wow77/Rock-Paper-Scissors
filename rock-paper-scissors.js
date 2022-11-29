@@ -13,25 +13,25 @@
   //Single round play function
   function playRound(playerSelection, computerSelection){
   if (playerSelection.toLowerCase() === "rock"){
-    if (computerChoice === "scissor"){
+    if (computerSelection === "scissor"){
       return "You Win! Rock beats Scissor";
-    } else if (computerChoice === "paper"){
+    } else if (computerSelection === "paper"){
       return "You Lose! Paper beats Rock";
     } else{
       return "It's a draw!";
     }
   } else if (playerSelection.toLowerCase() === "paper"){
-    if (computerChoice === "rock"){
+    if (computerSelection === "rock"){
       return "You Win! Paper beats Rock";
-    } else if (computerChoice === "scissor"){
+    } else if (computerSelection === "scissor"){
       return "You Lose! Scissor beats Paper";
     } else{
       return "It's a draw!";
     }
   } else if (playerSelection.toLowerCase() === "scissor"){
-    if (computerChoice === "paper"){
+    if (computerSelection === "paper"){
       return "You Win! Scissor beats Paper";
-    } else if (computerChoice === "rock"){
+    } else if (computerSelection === "rock"){
       return "You Lose! Rock beats Scissor";
     } else{
       return "It's a draw!";
@@ -41,14 +41,14 @@
   }
   }
 
-  const computerChoice = getComputerChoice();
- 
+  const computerSelection = getComputerChoice();
+  const playerSelection = prompt("Enter your choice:");
+  console.log(playRound(playerSelection, computerSelection));
 
   //Five times game play function
   function game(){
     for(let i=0; i<5; i++){
-      const playerSelection = prompt("Enter your choice:");
-      console.log(playRound(playerSelection, computerChoice));
+      
     }
   }
 
