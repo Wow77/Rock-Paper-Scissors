@@ -41,14 +41,12 @@
   }
   }
 
-  const computerSelection = getComputerChoice();
-  const playerSelection = prompt("Enter your choice:");
-  console.log(playRound(playerSelection, computerSelection));
-
   //Five times game play function
   function game(){
     for(let i=0; i<5; i++){
-      
+      const computerSelection = getComputerChoice();
+      const playerSelection = prompt("Enter your choice:");
+      console.log(playRound(playerSelection, computerSelection));
     }
   }
 
