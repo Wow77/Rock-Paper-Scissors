@@ -45,7 +45,7 @@
   function game(){
     for(let i=0; i<5; i++){
       const computerSelection = getComputerChoice();
-      const playerSelection = prompt("Welcome to Man vs computer game.\nSelect your choice:\n 1.Rock       2.Paper     3.Scissor\nEnter your choice e.g Paper:");
+      const playerSelection = prompt("Welcome to Man vs Computer Competition.\nLet's see who is Superior...Select your choice:\n 1.Rock       2.Paper     3.Scissor\nEnter your choice e.g Paper:");
       console.log(playRound(playerSelection, computerSelection));
     }
   }
