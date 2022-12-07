@@ -16,7 +16,7 @@
     if (computerSelection === "scissor"){
       return "You Win! Rock beats Scissor";
     } else if (computerSelection === "paper"){
-      return "You Lose! Paper beats Rock";
+      return "You Lose! Paper beats Rock (Computer Wins)";
     } else{
       return "It's a draw!";
     }
@@ -24,7 +24,7 @@
     if (computerSelection === "rock"){
       return "You Win! Paper beats Rock";
     } else if (computerSelection === "scissor"){
-      return "You Lose! Scissor beats Paper";
+      return "You Lose! Scissor beats Paper (Computer Wins)";
     } else{
       return "It's a draw!";
     }
@@ -32,7 +32,7 @@
     if (computerSelection === "paper"){
       return "You Win! Scissor beats Paper";
     } else if (computerSelection === "rock"){
-      return "You Lose! Rock beats Scissor";
+      return "You Lose! Rock beats Scissor (Computer Wins)";
     } else{
       return "It's a draw!";
     }
